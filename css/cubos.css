@@ -1,0 +1,12 @@
+.mi-cuadrado {
+  width: 200px;           /* Ancho del cuadrado */
+  height: 200px;          /* Alto del cuadrado */
+  background-color: rgba(255, 255, 255, 0.8); /* Blanco con un poco de transparencia */
+  margin: 20px auto;      /* 20px de separación arriba y 'auto' para centrarlo */
+  border: 2px solid #fff; /* Un borde blanco para que resalte del fondo */
+  border-radius: 10px;    /* Bordes redondeados (opcional) */
+  display: flex;          /* Esto es para centrar el texto dentro del cuadrado */
+  align-items: center;
+  justify-content: center;
+  color: #333;            /* Color del texto dentro del cuadrado */
+}

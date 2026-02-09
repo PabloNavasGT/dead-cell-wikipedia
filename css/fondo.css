@@ -1,0 +1,11 @@
+#fondo{
+  
+  background-image: url("/imagenes/fondo\ decell\ islas.jpeg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #e77f3a;
+
+}

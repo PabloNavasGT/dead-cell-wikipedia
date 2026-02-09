@@ -1,8 +1,25 @@
-title {
- background-image: linear-gradient(to "rigth", red, yellow);
- font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+#fucia {
+
+    color: rgb(236, 17, 120);
 }
 
-.caja {
-    width: 7cm;
+#rojo { 
+
+    color: rgb(248, 32, 32);
 }
+
+#verde {
+
+    color: rgba(2, 255, 107, 0.775);
+}
+
+#cyan {
+
+    color: aqua;
+}
+
+p , h2  {
+
+    color: azure;
+}
+    {}

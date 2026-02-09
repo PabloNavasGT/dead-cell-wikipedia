@@ -1,0 +1,20 @@
+
+
+#titulodel1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 5rem;
+    color: #08ffad;
+    text-transform: uppercase;
+    letter-spacing: -2px; 
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+
+    text-shadow: 
+        3px 3px 0px #444, 
+        6px 6px 0px #222;
+
+
+    transform: rotate(-1deg);
+}
+
