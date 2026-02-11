@@ -1,12 +1,12 @@
 
 
 .cubecraftcolab1 {
-  width: 800px;           /* Ancho del cuadrado */
-  height: 200px;          /* Alto del cuadrado */
-  background-color: rgb(0, 0, 0);  /*Blanco con un poco de transparencia */
-  margin: 40px auto;      /* 20px de separación arriba y 'auto' para centrarlo */
-   border: 2px solid #0df4d1;/* Un borde blanco para que resalte del fondo */
-  border-radius: 10px;    /* Bordes redondeados (opcional) */
+  width: 800px;          
+  height: 200px;         
+  background-color: rgb(0, 0, 0); 
+  margin: 40px auto;      
+   border: 2px solid #0df4d1;
+  border-radius: 10px;    
   border-left: none;
   border-bottom: none;
   display: flex;    
@@ -18,7 +18,7 @@
 #cubitocraft {
   width: 400px;          
   height: 150px;         
-  background-color: rgba(219, 106, 106, 0.858); /* Blanco con un poco de transparencia */
+  background-color: rgba(219, 106, 106, 0.858); 
   margin: 40px auto;      
    border: 2px solid #c01414;
   border-radius: 10px;   
@@ -26,7 +26,7 @@
   display: flex;          
   
   align-items: center;
-  justify-content: center;;            /* Color del texto dentro del cuadrado */
+  justify-content: center;;            
 }
 
 
@@ -43,7 +43,7 @@
     display: flex;
     flex-direction: row;    
     align-items: center;    
-    flex: 1 1 600px;        /* Un poco más ancho para que quepa la imagen a la par */
+    flex: 1 1 600px;       
     max-width: 700px;
     background: rgba(34, 33, 33, 0.75);
     border-radius: 12px;
@@ -55,7 +55,7 @@
     display: flex;
     flex-direction: row;    
     align-items: center;    
-    flex: 1 1 600px;        /* Un poco más ancho para que quepa la imagen a la par */
+    flex: 1 1 600px;        
     max-width: 700px;
     background: rgba(34, 33, 33, 0.75);
     border-radius: 12px;
@@ -83,7 +83,7 @@
 
 .colabchi{
            background: linear-gradient(135deg, #4b0000 0%, #8b4513 100%);
-    border: 2px solid #d4af37; /* Un toque dorado */
+    border: 2px solid #d4af37; 
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 15px;
@@ -121,7 +121,7 @@ background: #121212;
 
 .colabchislay {
           background: linear-gradient(135deg, #736b62 0%, #824113 100%);
-    border: 2px solid #d4af37; /* Un toque dorado */
+    border: 2px solid #d4af37; 
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 15px;
@@ -134,7 +134,7 @@ background: #121212;
 
 .colabchiterraria{
            background: linear-gradient(135deg, #6f3805 0%, #0b982c 100%);
-    border: 2px solid #d4af37; /* Un toque dorado */
+    border: 2px solid #d4af37;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 15px;
@@ -158,7 +158,7 @@ background: #121212;
 
 .colabchishovel {
           background: linear-gradient(135deg, #2a12a3 0%, #e3cd09 100%);
-    border: 2px solid #25160c; /* Un toque dorado */
+    border: 2px solid #25160c; 
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 15px;
@@ -182,7 +182,7 @@ background: #121212;
 
 .colabchiguacamelee {
           background: linear-gradient(135deg, #1a0b8a 0%, #35aa0e 100%);
-    border: 2px solid #d4af37; /* Un toque dorado */
+    border: 2px solid #d4af37; 
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 15px;
@@ -194,7 +194,7 @@ background: #121212;
 
 .colabchiskul {
            background: linear-gradient(135deg, #b49d9d 0%, #4b0668 100%);
-    border: 2px solid #d4af37; /* Un toque dorado */
+    border: 2px solid #d4af37; 
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 15px;
@@ -203,4 +203,16 @@ background: #121212;
     align-items: center;
     color: white;;
  }
+
+ .colabchimonter {
+ background: radial-gradient(circle at center, #8f213e 0%, #3e0000 100%);
+    border: 2px solid #111010;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(226, 222, 222);
+}
  

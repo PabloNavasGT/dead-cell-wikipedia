@@ -1,11 +1,11 @@
 #titulodel1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Aplicamos la fuente */
-    font-size: 5rem;               /* Un tamaño grande e imponente */
-    text-transform: uppercase;      /* Todo en mayúsculas */
-    letter-spacing: 1px;           /* Espacio entre letras para que respire */
-    text-align: center;            /* Centrado se ve más profesional */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-size: 5rem;               
+    text-transform: uppercase;      
+    letter-spacing: 1px;           
+    text-align: center;            
     
-    /* Efecto extra: Una sombra suave para que parezca que brilla */
+    
     text-shadow: 3px 3px 10px rgba(240, 25, 25, 0.5);
     
     margin-top: 20px;
@@ -13,14 +13,28 @@
 }
 
 #titulodel2 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Aplicamos la fuente */
-    font-size: 2rem;               /* Un tamaño grande e imponente */
-    text-transform: uppercase;      /* Todo en mayúsculas */
-    letter-spacing: 1px;           /* Espacio entre letras para que respire */
-    text-align: center;            /* Centrado se ve más profesional */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-size: 2rem;               
+    text-transform: uppercase;     
+    letter-spacing: 1px;           
+    text-align: center;           
     
-    /* Efecto extra: Una sombra suave para que parezca que brilla */
+
     text-shadow: 3px 3px 10px rgba(240, 25, 25, 0.5);
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#titulodel3 {
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-size: 2rem;               
+    text-transform: uppercase;     
+    letter-spacing: 1px;           
+    text-align: center;           
+    
+
+    text-shadow: 3px 3px 10px rgba(211, 13, 142, 0.819);
     
     margin-top: 10px;
     margin-bottom: 10px;

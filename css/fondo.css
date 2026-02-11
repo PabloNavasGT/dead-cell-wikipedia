@@ -32,3 +32,27 @@
   background-color: #e77f3a;
 
 }
+
+#fondo4{
+  
+  background-image: url("/imagenes/reina\ dlcdeadcells.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #e77f3a;
+
+}
+
+#fondo5{
+  
+  background-image: url("/imagenes/deadcellscocaso.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #e77f3a;
+
+}
