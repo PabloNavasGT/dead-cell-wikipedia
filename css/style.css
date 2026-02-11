@@ -22,4 +22,102 @@ p , h2  {
 
     color: azure;
 }
-    {}
+
+#blanco {
+
+    color: white;
+}
+/* Estilo para la tabla principal usando su estructura */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto;
+    background-color: rgba(186, 98, 51, 0.7);
+    border: 3px solid #5b2508;
+    color: white;
+    font-family: sans-serif;
+}
+
+/* Estilo para los títulos h2 dentro de la tabla */
+#monstruos, #masters, #armeria, #mutaciones, #skins, #recursos {
+    margin: 0;
+    color: #fff;
+    font-size: 1.4rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Estilo para los enlaces usando tus hashtags de colores */
+#fucia, #rojo, #verde, #cyan {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+/* Colores específicos para cada botón cuando pasas el mouse */
+#fucia:hover { color: #ff00ff; background: white; }
+#rojo:hover { color: #ff0000; background: white; }
+#verde:hover { color: #00ff00; background: white; }
+#cyan:hover { color: #00ffff; background: white; }
+
+/* Para que las celdas tengan espacio y no se vean apretadas */
+td {
+    padding: 15px;
+    border-bottom: 1px solid #5b2508;
+}
+
+/* Contenedor con efecto de brillo para los textos */
+.seccion-brillante {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 15px;
+    
+    /* GRADIENTE DE FONDO: Un azul muy oscuro que se funde a negro */
+    background: linear-gradient(145deg, #1a1a2e 0%, #0f0f1a 100%);
+    
+    /* BORDE: Un borde fino para dar definición */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    
+    margin-bottom: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* Sombra para dar profundidad */
+    transition: all 0.4s ease;
+}
+
+/* El efecto de la ráfaga de luz (Brillo) */
+.seccion-brillante::before {
+    content: normal;
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(
+        to right, 
+        transparent, 
+        rgba(255, 255, 255, 0.2), 
+        transparent
+    );
+    transform: skewX(-20deg);
+}
+
+/* Cambios cuando pasas el mouse */
+.seccion-brillante:hover {
+    transform: translateY(-5px); /* Se eleva un poquito */
+    border-color: rgba(255, 255, 255, 0.4); /* El borde se ilumina */
+    box-shadow: 0 15px 35px rgba(0,0,0,0.7);
+}
+
+.seccion-brillante:hover::before {
+    left: 150%;
+    transition: all 0.7s ease;
+}
+
+/* Estilo para los títulos dentro de los cuadros */
+.seccion-brillante h5, .seccion-brillante p, h1 {
+    position: relative;
+    z-index: 1; /* Asegura que el texto esté sobre el fondo */
+}

@@ -1,12 +1,206 @@
-.mi-cuadrado {
-  width: 200px;           /* Ancho del cuadrado */
+
+
+.cubecraftcolab1 {
+  width: 800px;           /* Ancho del cuadrado */
   height: 200px;          /* Alto del cuadrado */
-  background-color: rgba(255, 255, 255, 0.8); /* Blanco con un poco de transparencia */
-  margin: 20px auto;      /* 20px de separación arriba y 'auto' para centrarlo */
-  border: 2px solid #fff; /* Un borde blanco para que resalte del fondo */
+  background-color: rgb(0, 0, 0);  /*Blanco con un poco de transparencia */
+  margin: 40px auto;      /* 20px de separación arriba y 'auto' para centrarlo */
+   border: 2px solid #0df4d1;/* Un borde blanco para que resalte del fondo */
   border-radius: 10px;    /* Bordes redondeados (opcional) */
-  display: flex;          /* Esto es para centrar el texto dentro del cuadrado */
+  border-left: none;
+  border-bottom: none;
+  display: flex;    
+
   align-items: center;
-  justify-content: center;
-  color: #333;            /* Color del texto dentro del cuadrado */
+  justify-content: center;;            
 }
+
+#cubitocraft {
+  width: 400px;          
+  height: 150px;         
+  background-color: rgba(219, 106, 106, 0.858); /* Blanco con un poco de transparencia */
+  margin: 40px auto;      
+   border: 2px solid #c01414;
+  border-radius: 10px;   
+  border-left: none ;
+  display: flex;          
+  
+  align-items: center;
+  justify-content: center;;            /* Color del texto dentro del cuadrado */
+}
+
+
+.contenedor-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+ .cubecraftcolab1 {
+    display: flex;
+    flex-direction: row;    
+    align-items: center;    
+    flex: 1 1 600px;        /* Un poco más ancho para que quepa la imagen a la par */
+    max-width: 700px;
+    background: rgba(34, 33, 33, 0.75);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: right;       
+}
+
+.cubecraftskins{
+    display: flex;
+    flex-direction: row;    
+    align-items: center;    
+    flex: 1 1 600px;        /* Un poco más ancho para que quepa la imagen a la par */
+    max-width: 700px;
+    background: rgba(34, 33, 33, 0.75);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: right;
+}
+
+
+.texto-skin {
+    flex: 2;                
+    padding-right: 20px;    
+}
+
+
+.img-skin {
+    flex: 1;                
+    max-width: 250px;       
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.cubecraftskins { border-left: 5px solid #00d4ff; }
+.cubecraftcolab1 { border-left: 5px solid #a335ee; }
+
+.colabchi{
+           background: linear-gradient(135deg, #4b0000 0%, #8b4513 100%);
+    border: 2px solid #d4af37; /* Un toque dorado */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;;
+ }
+ 
+.colabchihollow {
+ background: radial-gradient(circle at center, #2c3e50 0%, #000000 100%);
+    border: 2px solid #111010;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(226, 222, 222);
+}
+
+.colabchidifter {
+background: #121212; 
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border: 3px solid;
+    border-image: conic-gradient(#12c2e9, #c471ed, #f64f59, #12c2e9) 1;
+}
+
+.colabchislay {
+          background: linear-gradient(135deg, #736b62 0%, #824113 100%);
+    border: 2px solid #d4af37; /* Un toque dorado */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;;
+ }
+
+.colabchiterraria{
+           background: linear-gradient(135deg, #6f3805 0%, #0b982c 100%);
+    border: 2px solid #d4af37; /* Un toque dorado */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;;
+ }
+ 
+.colabchirisk {
+ background: radial-gradient(circle at center, #a57829 0%, #88dde7 100%);
+    border: 2px solid #b68326;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(204, 138, 25);
+}
+
+.colabchishovel {
+          background: linear-gradient(135deg, #2a12a3 0%, #e3cd09 100%);
+    border: 2px solid #25160c; /* Un toque dorado */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;;
+ }
+ 
+.colabchikatanazero {
+ background: radial-gradient(circle at center, #d10694 0%, #3108e9 100%);
+    border: 2px solid #111010;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(226, 222, 222);
+}
+
+.colabchiguacamelee {
+          background: linear-gradient(135deg, #1a0b8a 0%, #35aa0e 100%);
+    border: 2px solid #d4af37; /* Un toque dorado */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;;
+ }
+
+.colabchiskul {
+           background: linear-gradient(135deg, #b49d9d 0%, #4b0668 100%);
+    border: 2px solid #d4af37; /* Un toque dorado */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;;
+ }
+ 
