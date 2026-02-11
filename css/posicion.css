@@ -5,6 +5,13 @@
     border-radius: 15px; 
 }
 
+#imagen-portada2 {
+    display: block;    
+    margin-left: auto; 
+    margin-right: auto;
+    border-radius: 15px; 
+}
+
 #compañero-fijo {
     position: fixed;   
     bottom: 12cm;      
