@@ -27,12 +27,13 @@
 }
 
 #titulodel3 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     font-size: 2rem;               
     text-transform: uppercase;     
     letter-spacing: 1px;           
     text-align: center;           
-    
+    width: 30px;
+    height: 30px;
 
     text-shadow: 3px 3px 10px rgba(211, 13, 142, 0.819);
     

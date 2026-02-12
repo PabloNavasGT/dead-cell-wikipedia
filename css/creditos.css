@@ -1,0 +1,32 @@
+.creditos-finales {
+    background: radial-gradient(circle at center, #f7751e 0%, #460681 100%);
+    border: 3px solid #ffd700;
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 20px rgba(247, 117, 30, 0.5);
+}
+
+.creditos-finales h2 {
+    color: #ffd700;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.logos-creadores {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.logo-empresa {
+    width: 120px;
+    transition: transform 0.3s;
+}
+
+.logo-empresa:hover {
+    transform: scale(1.1) rotate(5deg);
+}
