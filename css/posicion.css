@@ -1,9 +1,11 @@
 #imagen-portada {
     display: block;    
     margin-left: auto; 
-    margin-right: auto;
     border-radius: 15px; 
+    position: relative;
+    top: -100px;
 }
+
 
 #imagen-portada2 {
     display: block;    
