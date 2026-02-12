@@ -48,7 +48,7 @@ table {
 }
 
 
-#fucia, #rojo, #verde, #cyan {
+#fucia, #rojo, #verde, #cyan, #roble, #girs, #verdementa{
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
@@ -63,6 +63,9 @@ table {
 #rojo:hover { color: #ff0000; background: white; }
 #verde:hover { color: #00ff00; background: white; }
 #cyan:hover { color: #00ffff; background: white; }
+#roble:hover { color: #854708; background: white; }
+#gris:hover { color: #00ffff; background: white; }
+#verdementa:hover { color: #854708; background: white; }
 
 
 td {
