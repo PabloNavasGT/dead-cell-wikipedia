@@ -216,3 +216,54 @@ background: #121212;
     color: rgb(226, 222, 222);
 }
  
+
+.colabchiamigo {
+ background: radial-gradient(circle at center, #31fb09 0%, #e92608 100%);
+    border: 2px solid #d3cbcb;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(226, 222, 222);
+}
+
+.colabchishovel2 {
+          background: linear-gradient(135deg, #2a12a3 0%, #09e3ca 100%);
+    border: 2px solid #25160c; 
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;;
+ }
+
+.colabchiamigo {
+    border: 2px solid #d3cbcb;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(226, 222, 222);
+    transition: transform 0.3s ease;
+}
+
+
+.bg-zombie { background: radial-gradient(circle, #5cad0a 0%, #1a3a05 100%); }
+.bg-murcielago { background: radial-gradient(circle, #460681 0%, #120122 100%); }
+.bg-canibal { background: radial-gradient(circle, #b86d0b 0%, #462a04 100%); }
+.bg-inquisidor { background: radial-gradient(circle, #9932cc 0%, #2a0a3d 100%); }
+.bg-golem { background: radial-gradient(circle, #8b2700 0%, #3a1000 100%); }
+
+.colabchiamigo img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    order: 2; 
+}
+
