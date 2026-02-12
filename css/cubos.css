@@ -267,3 +267,7 @@ background: #121212;
     order: 2; 
 }
 
+.meter {
+    max-width: 70%;
+    order: 1; 
+}
