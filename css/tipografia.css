@@ -1,20 +1,9 @@
-#titulodel1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-    font-size: 5rem;               
-    text-transform: uppercase;      
-    letter-spacing: 1px;           
-    text-align: center;            
-    
-    
-    text-shadow: 3px 3px 10px rgba(240, 25, 25, 0.5);
-    
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
 
-#titulodel2 {
+
+.titulo {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-    font-size: 2rem;               
+    color: cadetblue;
+    font-size: 5rem;               
     text-transform: uppercase;     
     letter-spacing: 1px;           
     text-align: center;           
@@ -26,16 +15,16 @@
     margin-bottom: 10px;
 }
 
-#titulodel3 {
+.titulo2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-    font-size: 2rem;               
+    color: rgb(214, 24, 94);
+    font-size: 8rem;               
     text-transform: uppercase;     
     letter-spacing: 1px;           
     text-align: center;           
-    width: 30px;
-    height: 30px;
+    
 
-    text-shadow: 3px 3px 10px rgba(211, 13, 142, 0.819);
+    text-shadow: 3px 3px 10px rgba(240, 25, 25, 0.5);
     
     margin-top: 10px;
     margin-bottom: 10px;
