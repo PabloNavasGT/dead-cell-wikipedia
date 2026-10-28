@@ -1,103 +1,102 @@
-<title>criaturas</title>
-<link rel="stylesheet" href="../css/style.css">
-     <link rel="stylesheet" href="../css/tipografia.css">
-     <link rel="stylesheet" href="../css/fondo.css">
-     <link rel="stylesheet" href="../css/cubos.css">
-     <link rel="stylesheet" href="../css/posicion.css">
-   <img src="/imagenes/verdadedo simblodeadcell.png" id="compañero-fijo2" alt="Compañero de viaje" width="130" height="100">
-
- <h1 class="titulo2" style="color: blueviolet;">mounstrous y aliados </h1> 
-
- <br>
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monstruos y Aliados - Dead Cells</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tipografia.css">
+    <link rel="stylesheet" href="../css/fondo.css">
+    <link rel="stylesheet" href="../css/cubos.css">
+    <link rel="stylesheet" href="../css/posicion.css">
+</head>
 <body id="fondo5">
- <div class="seccion-brillante">
-  <h3 style="color: azure; line-height: 1.6;">> La isla es un resort vacacional de pesadilla donde el 99% de la población local tiene el firme propósito de convertirte en una mancha en el suelo; desde zombis con problemas de espacio personal hasta caballeros con hachas más grandes que tus ganas de vivir, todos mutados por el Malestar. Por suerte, no estás tan solo: siempre puedes contar con el Coleccionista o el Escribano, que se encarga de registrar tus humillantes derrotas para la posteridad. Básicamente, tus "amigos" son tipos raros que se limitan a verte morir una y otra vez mientras comentan lo mal que te ves sin cabeza, lo cual es el máximo nivel de apoyo emocional que vas a encontrar por aquí. En este apartado, vamos a profundizar en quiénes son estos monstruos y aliados que hacen de tu vida un ciclo infinito de vida y muerte.</h3> 
-   </div> <hr>
- 
- <h2 class="titulo">hablemos primero de nuestras... amistades???</h2>
-<img id="imagen-portada2" src="https://i.redd.it/79ymeuyxfws41.png" alt="aliados..." width="600" height="350">
 
-<div class="colabchishovel2">
-    <div class="info-text">
-        <h3 style="color: rgb(73, 183, 196);">El Coleccionista</h3>
-        <p>El MVP de la isla. Es un tipo con una jeringa gigante y una obsesión poco saludable por las Células. Tú le entregas el botín y él desbloquea planos de armas.</p>
-    </div>
-    <img src="/imagenes/coleccionista" alt="coleccionista" width="250" height="270">
-</div>
+    <img src="../imagenes/verdadedo simblodeadcell.png" id="compañero-fijo2" alt="Compañero de viaje">
 
-<div class="colabchikatanazero">
-    <div class="info-text">
-        <h3 style="color: rgba(247, 117, 30, 0.697);">El Escribano</h3>
-        <p>Lleva las estadísticas de tus fracasos. Es el recordatorio viviente de que, aunque mueras, dejas un rastro de datos.</p>
-    </div>
-    <img src="/imagenes/The_Scribe.webp" alt="escribano" width="250" height="275">
-</div>
+    <h1 class="titulo2">Monstruos y Aliados</h1> 
+    <br>
 
-<div class="colabchislay">
-    <div class="info-text">
-        <h3 style="color: rgba(247, 215, 30, 0.912);">El Caballero</h3>
-        <p>Una guerrera que te da consejos sobre la isla. Es agradable tener a alguien que no intente arrancarte las tripas de inmediato.</p>
-    </div>
-    <img src="/imagenes/tutorial-knight-foto.jpg" alt="tutorialgirl">
-</div>
-
-<div class="colabchiterraria">
-    <div class="info-text">
-        <h3 style="color: rgba(30, 247, 167, 0.697);">Guillu</h3>
-        <p>El encargado de darte esos "bonos" o mutaciones que definen tu partida. Es bajito y nunca juzga tus derrotas.</p>
-    </div>
-    <img src="/imagenes/guilian.jpeg" alt="guilian">
-</div>
+    <div class="seccion-brillante">
+        <p>
+            La isla es un resort vacacional de pesadilla donde el 99% de la población local tiene el firme propósito de convertirte en una mancha en el suelo; desde zombis con problemas de espacio personal hasta caballeros con hachas más grandes que tus ganas de vivir, todos mutados por el Malestar. Por suerte, no estás tan solo: siempre puedes contar con el Coleccionista o el Escribano. En este apartado, vamos a profundizar en quiénes son estos monstruos y aliados que hacen de tu vida un ciclo infinito de vida y muerte.
+        </p> 
+    </div> 
     <hr>
-<h2 class="titulo">los mounstrous</h2>
-<img id="imagen-portada2" src="/imagenes/monster.jpg" alt="monster" width="400" height="270">
+ 
+    <h2 class="titulo">¿Nuestras amistades?</h2>
+    <!-- Contenedor dinámico de Aliados -->
+    <div id="contenedor-aliados"></div>
 
-<div class="colabchiamigo bg-zombie">
-    <div class="meter">
-        <h3 style="color: #adff2f;">Zombie</h3>
-        <p>El comité de bienvenida. Es el saco de boxeo oficial de la isla, pero cuando se junta con diez amigos más, la cosa deja de tener gracia.</p>
+    <hr>
+    <h2 class="titulo">Los Monstruos</h2>
+    <!-- Contenedor dinámico de Monstruos -->
+    <div id="contenedor-monstruos"></div>
+
+    <br>
+    <div class="seccion-brillante footer-bloque-video">
+        <div class="footer-video-col">
+            <video src="../video/WhatsApp Video 2026-02-04 at 12.02.33.mp4" autoplay loop muted></video>
+        </div>
+        <div class="footer-texto-col">
+            <h2 class="titulo2" style="font-size: 1.3rem; margin-top: 0;">
+               Aún tienes tantos estilos por modelar... así que ten paciencia
+            </h2>
+            <h2 style="margin-bottom: 0;">
+                <a href="../index.html">Volver al lobby</a>
+            </h2>
+        </div>
     </div>
-    <img  src="/imagenes/Zombie.webp" alt="zombie">
-</div>
 
-<div class="colabchiamigo bg-murcielago">
-    <div class="meter">
-        <h3 style="color: #da70d6;">Murciélago</h3>
-        <p>Su única meta es explotar en tu cara. Su sonido de "¡beeeeep!" es el despertador oficial del estrés.</p>
-    </div>
-    <img src="/imagenes/murcielago.jpeg" alt="murcielago">
-</div>
+    <script>
+        async function cargarCriaturas() {
+            try {
+                // 1. Cargar Aliados
+                const resAliados = await fetch('/api/wiki/aliado');
+                const jsonAliados = await resAliados.json();
+                const divAliados = document.getElementById('contenedor-aliados');
+                divAliados.innerHTML = '';
+                
+                if(jsonAliados.success && jsonAliados.data) {
+                    jsonAliados.data.forEach(item => {
+                        divAliados.innerHTML += `
+                            <div class="aliado">
+                                <div class="info-text">
+                                    <h2>${item.nombre}</h2>
+                                    <p>${item.descripcion}</p>
+                                    ${item.extra ? `<p><em>${item.extra}</em></p>` : ''}
+                                </div>
+                                <img src="${item.imagen || '../imagenes/coleccionista.png'}" alt="${item.nombre}">
+                            </div>
+                        `;
+                    });
+                }
 
-<div class="colabchiamigo bg-canibal">
-    <div class="meter">
-        <h3 style="color: #ffa500;">El Caníbal</h3>
-        <p>Salta por todo el escenario y lanza bombas. Te obliga a aprender a hacer parry o a rodar como si tu vida dependiera de ello.</p>
-    </div>
-    <img src="/imagenes/Cannibal.webp" alt="canibal">
-</div>
-
-<div class="colabchiamigo bg-inquisidor">
-   <div class="meter">
-        <h3 style="color: #ee82ee;">El Inquisidor</h3>
-        <p>El francotirador. Te dispara rayos mágicos a través de las paredes. El objetivo número uno de cualquier jugador con sentido común.</p>
-   </div>
-        <img src="/imagenes/inquisidor.webp" alt="inquisidor">
-   </div>
-    
-</div>
-
-<div class="colabchiamigo bg-golem">
-    <div class="meter">
-        <h3 style="color: #ff4500;">El Golem</h3>
-        <p>No solo pega como un camión, si intentas huir, te teletransporta de vuelta hacia él. Un cobrador de deudas implacable.</p>
-    </div>
-    <img src="/imagenes/Golem.webp" alt="golem">
-</div>
- <hr>
- <br>
- <div class="colabchidifter"><h2>aun tienes mounstros y amigos por registrar... asique tengan paciencia</h2> 
-  <h2><a href="/index.html">volever al lobby</a> </h2>
- <video src="/video/WhatsApp Video 2026-02-04 at 12.02.33.mp4" autoplay loop></video></div>
-
+                // 2. Cargar Monstruos
+                const resMonstruos = await fetch('/api/wiki/monstruo');
+                const jsonMonstruos = await resMonstruos.json();
+                const divMonstruos = document.getElementById('contenedor-monstruos');
+                divMonstruos.innerHTML = '';
+                
+                if(jsonMonstruos.success && jsonMonstruos.data) {
+                    jsonMonstruos.data.forEach(item => {
+                        divMonstruos.innerHTML += `
+                            <div class="monstruos">
+                                <div class="info-text">
+                                    <h2>${item.nombre}</h2>
+                                    <p>${item.descripcion}</p>
+                                    ${item.extra ? `<p><em>${item.extra}</em></p>` : ''}
+                                </div>
+                                <img src="${item.imagen || '../imagenes/murcielago.jpeg'}" alt="${item.nombre}">
+                            </div>
+                        `;
+                    });
+                }
+            } catch (error) {
+                console.error("Error al cargar datos de criaturas:", error);
+            }
+        }
+        cargarCriaturas();
+    </script>
 </body>
+</html>

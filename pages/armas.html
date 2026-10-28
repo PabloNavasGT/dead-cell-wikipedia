@@ -1,93 +1,107 @@
-<title>armeria dead cells</title>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armería Dead Cells - Wiki</title>
+    <link rel="stylesheet" href="/css/style.css"> 
+    <link rel="stylesheet" href="/css/especial.css">
+</head>
+<body>
 
-<link rel="stylesheet" href="../css/posicion.css">
- <link rel="stylesheet" href="../css/tipografia.css">
+  <body>
 
-        <img src="/imagenes/verdadedo simblodeadcell.png" id="compañero-fijo2" alt="Compañero de viaje">
+    <img src="../imagenes/verdadedo simblodeadcell.png" id="compañero-fijo2" alt="Compañero de viaje">
 
-<h1 class="titulo">bienvenido ala armeria(o la juguetreia)</h1>
-<body id="fondo3">
+    <h1 class="titulo2">Bienvenido a la armería</h1>
 
-
-    <head><link rel="stylesheet" href="../css/style.css"> 
-<link rel="stylesheet" href="../css/fondo.css">
-<link rel="stylesheet" href="../css/cubos.css"> </head>
-<body id="fondo2">
-
-    <h2>veamos a armar tu arsenal. En Dead Cells, las armas tienen tanta personalidad como los jefes; algunas son reliquias legendarias y otras son... bueno, utensilios de cocina usadoscon mucha mala vibra </h2>
-
-
-    <img id=imagen-portada2 src="/imagenes/fondomartillo.jpg" alt="martillo" width="350" height="400">
-
-<hr>
-
-
-<div class="contenedor-galeria">
-
-    <div class="cubecraftskins">
-        <div class="texto-skin">
-            <h2 style="color: rgba(46, 33, 160, 0.836);">Trampa de Lobos</h2>
-            <p><strong>Descripción:</strong> Un objeto táctico que inmoviliza a los enemigos (¡incluso jefes!) mientras les infliges daño extra.</p>
-            <p><strong>Ubicación:</strong> La sueltan los Zombis Corredores en el Paseo de los Condenados.</p>
-            <p><em>"Un paso en falso, un morder de acero; el cazador espera al que fue primero."</em></p>
-        </div>
-        <img src="/imagenes/trampa paraosos.jpeg" alt="trampas" class="img-skin">
+    <div class="seccion-brillante">
+        <p>Las armas en Dead Cells se rigen por tres estadísticas principales. Conoce tus colores antes de lanzarte a la masacre.</p>
     </div>
 
-    <div class="cubecraftskins">
-        <div class="texto-skin">
-            <h2 style="color: rgb(255, 106, 0);">Espada Maestra (Cursed Sword)</h2>
-            <p><strong>Descripción:</strong> El arma con más daño del juego, pero con un detalle: si te tocan una sola vez, mueres instantáneamente.</p>
-            <p><strong>Ubicación:</strong> La suelta el jefe Conjuntivius después de derrotarlo varias veces.</p>
-            <p><em>"Poder absoluto en un filo de cristal; un roce es la gloria, un error es tu final."</em></p>
+    <!-- TARJETAS INFORMATIVAS DE LAS 3 ESPECIALIDADES AL PRINCIPIO -->
+    <div class="grid-especialidades">
+        <div class="card-brutalidad">
+            <h2 style="color: #ff3333;">Brutalidad (Rojo)</h2>
+            <p>Enfoque en daño cuerpo a cuerpo rápido, sangrado y velocidad frenética.</p>
         </div>
-        <img src="/imagenes/espadamaldita.jpeg" alt="espada maldita" class="img-skin">
+        <div class="card-estrategia">
+            <h2 style="color: #a855f7;">Estrategia / Tácticas (Morado)</h2>
+            <p>Trampas, torretas, ataques a distancia y daño mágico o táctico a largo alcance.</p>
+        </div>
+        <div class="card-supervivencia">
+            <h2 style="color: #10b981;">Supervivencia (Verde)</h2>
+            <p>Armas pesadas, escudos robustos, gran cantidad de vida y control de masas.</p>
+        </div>
     </div>
 
-    <div class="cubecraftskins">
-        <div class="texto-skin">
-            <h2 style="color: rgb(240, 67, 67);">Sartén (sarten)</h2>
-            <p><strong>Descripción:</strong> Dos sartenes unidas por una cadena. Hace críticos si golpeas de frente. Es el arma con más estilo cómico.</p>
-            <p><strong>Ubicación:</strong> Se encuentra en una sala especial de lore (crossover con el tráiler).</p>
-            <p><em>"No busques magia ni acero de leyenda, que el fuego de la cocina es la mejor enmienda."</em></p>
-        </div>
-        <img src="/imagenes/sarten.jpeg" alt="sarten" class="img-skin">
+    <hr>
+
+    <div class="contenedor-galeria" id="contenedor-armas">
+        <!-- Las armas ordenadas se inyectarán aquí -->
     </div>
 
-    <div class="cubecraftskins">
-        <div class="texto-skin">
-            <h2 style="color: rgb(111, 255, 240);">Látigo Eléctrico (Electric Whip)</h2>
-            <p><strong>Descripción:</strong> Ataca automáticamente al enemigo más cercano y hace daño extra si el objetivo está en el agua.</p>
-            <p><strong>Ubicación:</strong> Plano inicial o soltado por los Cazadores en las celdas.</p>
-            <p><em>"Relámpago en tu mano, justicia de metal; el agua es tu aliada en este baile mortal."</em></p>
-        </div>
-        <img src="/imagenes/latigo electrico.jpeg" alt="latigo electrico" class="img-skin">
-    </div>
+    <script>
+        async function cargarArmas() {
+            try {
+                const resArmas = await fetch('/api/wiki/armas');
+                const dataArmas = await resArmas.json();
 
-    <div class="cubecraftskins">
-        <div class="texto-skin">
-            <h2 style="color: darkgoldenrod;">Cascanueces (Nutcracker)</h2>
-            <p><strong>Descripción:</strong> Un martillo pesado que hace daño crítico a enemigos congelados, aturdidos o inmovilizados.</p>
-            <p><strong>Ubicación:</strong> Plano inicial.</p>
-            <p><em>"A la roca y al cráneo les da el mismo trato; el martillo no juzga, solo impone su mandato."</em></p>
-        </div>
-        <img src="/imagenes/cascanueces.jpeg" alt="">
-    </div>
+                const contenedor = document.getElementById('contenedor-armas');
+                contenedor.innerHTML = '';
 
-    <div class="cubecraftskins">
-        <div class="texto-skin">
-            <h2 style="color: rgb(20, 41, 41);">Lanza de Simetría (Symmetry Lance)</h2>
-            <p><strong>Descripción:</strong> Un arma de gran alcance que hace daño crítico si matas a dos enemigos a la vez.</p>
-            <p><strong>Ubicación:</strong> La suelta La Mano del Rey la primera vez que lo derrotas.</p>
-            <p><em>"Equilibrio en el caos, medida en la herida; el orden de tu muerte es el fin de mi vida."</em></p>
-        </div>
-        <img src="/imagenes/espada doble.jpeg" alt="espada doble" class="img-skin">
-    </div>
+                if (dataArmas.success && dataArmas.data) {
+                    // ORDENAMIENTO PERSONALIZADO SEGÚN PRIORIDAD DE ESPECIALIDADES
+                    // Prioridad: Brutalidad -> Estrategia -> Supervivencia
+                    const pesoEspecialidad = (esp) => {
+                        if (esp.includes('brutalidad')) return 1;
+                        if (esp.includes('estrategia')) return 2;
+                        if (esp.includes('supervivencia')) return 3;
+                        return 4;
+                    };
 
-   <video src="/video/deadcells.mp4" autoplay loop></video> 
+                    const armasOrdenadas = dataArmas.data.sort((a, b) => {
+                        const priA = Math.min(...a.especialidades.map(pesoEspecialidad));
+                        const priB = Math.min(...b.especialidades.map(pesoEspecialidad));
+                        return priA - priB;
+                    });
 
-</div>
- <div class="colabchidifter"><h2>aun tienes que encontrar mas juguetes... asique tengan paciencia</h2> 
-  <h2><a href="/index.html">volever al lobby</a> </h2>
- <video src="/video/WhatsApp Video 2026-02-04 at 12.02.33.mp4" autoplay loop ></video></div>
+                    armasOrdenadas.forEach(arma => {
+                        let claseCss = 'esp-brutalidad'; // por defecto
+                        const esp = arma.especialidades;
+
+                        // Determinar la clase según 1 o 2 especialidades
+                        if (esp.length === 1) {
+                            if (esp.includes('brutalidad')) claseCss = 'esp-brutalidad';
+                            else if (esp.includes('estrategia')) claseCss = 'esp-estrategia';
+                            else if (esp.includes('supervivencia')) claseCss = 'esp-supervivencia';
+                        } else if (esp.length >= 2) {
+                            if (esp.includes('brutalidad') && esp.includes('estrategia')) claseCss = 'esp-brutalidad-estrategia';
+                            else if (esp.includes('estrategia') && esp.includes('supervivencia')) claseCss = 'esp-estrategia-supervivencia';
+                            else if (esp.includes('brutalidad') && esp.includes('supervivencia')) claseCss = 'esp-brutalidad-supervivencia';
+                        }
+
+                        contenedor.innerHTML += `
+                            <div class="${claseCss}">
+                                <div class="info-text">
+                                    <h2>${arma.nombre}</h2>
+                                    <p><strong>Especialidades:</strong> ${arma.especialidades.join(' / ')}</p>
+                                    <p><strong>Descripción:</strong> ${arma.descripcion}</p>
+                                    ${arma.dondeConseguirLo ? `<p><strong>Ubicación:</strong> ${arma.dondeConseguirLo.descripcion}</p>` : ''}
+                                    <p><em>${arma.extra}</em></p>
+                                </div>
+                                <img src="${arma.imagen}" alt="${arma.nombre}" width="160">
+                                ${arma.video ? `<video src="${arma.video}" autoplay loop muted width="160"></video>` : ''}
+                            </div>
+                        `;
+                    });
+                }
+            } catch (error) {
+                console.error("Error al cargar armas:", error);
+            }
+        }
+        cargarArmas();
+    </script>
 </body>
+</body>
+</html>

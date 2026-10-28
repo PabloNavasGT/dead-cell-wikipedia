@@ -1,167 +1,90 @@
-<title>skins</title>
-<link rel="stylesheet" href="../css/fondo.css">
-<link rel="stylesheet" href="../css/posicion.css">
-<link rel="stylesheet" href="../css/cubos.css"> </head>
-<link rel="stylesheet" href="../css/tipografia.css">
-<head><link rel="stylesheet" href="../css/style.css"> 
-<body id="fondo2">
-     <img src="/imagenes/verdadedo simblodeadcell.png" id="compañero-fijo2" alt="Compañero de viaje">
-      <div class="titulo"><h2>que aspecto tan bueno tienes hoy!</h2></div>
-      <hr>
-    <div class="cubecraftskins">
-        <div class="texto-skin">
-            <h2>Atuendo de Prisionero Clásico</h2>
-            <p>El look con el que despiertas cada mañana. Una bufanda rosa que se niega a ensuciarse a pesar de vivir en las alcantarillas.</p>
-            <p><strong>Cómo conseguirlo:</strong> Viene de serie. Es el uniforme oficial del fracaso... hasta que dejas de fracasar.</p>
-            <p><em>"Elegante, aerodinámico y con un sutil aroma a cadáver fresco."</em></p>
-        </div>
-        <img src="/imagenes/normal.png" alt="">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspectos y Skins - Dead Cells</title>
+    <link rel="stylesheet" href="../css/especial.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <img src="../imagenes/verdadedo simblodeadcell.png" id="compañero-fijo2" alt="Compañero de viaje">
+    
+    <h1 class="titulo2">¡Qué aspecto tan bueno tienes hoy!</h1>
+    <hr>
+
+    <div id="contenedor-atuendos">
+        <!-- Se inyectan los atuendos normales y colaborativos -->
     </div>
 
-<br>
-    <div class="cubecraftskins">
-        <div>
-            <h2>Atuendo de Salamandra</h2>
-            <p>Traje naranja brillante con manchas oscuras que imita la piel de los anfibios de los pozos de fuego.</p>
-            <p><strong>Cómo conseguirlo:</strong> Lo sueltan las Salamandras en el bioma de las Cavernas.</p>
-            <p><em>"No soy un dragón, pero si me tocas te vas a quemar igual."</em></p>
+    <br> 
+    <div class="seccion-brillante footer-bloque-video">
+        <div class="footer-video-col">
+            <video src="../video/WhatsApp Video 2026-02-04 at 12.02.33.mp4" autoplay loop muted></video>
         </div>
-        <img src="/imagenes/lagarto.png" alt="">
-    </div>
-<br>
-    <div class="cubecraftskins">
-        <div >
-            <h2>Atuendo de Mutante de las Alcantarillas</h2>
-            <p>Aspecto verde tóxico con texturas de escamas ácidas. Perfecto para nadar en residuos y veneno.</p>
-            <p><strong>Cómo conseguirlo:</strong> Derrota a las Ratas Mutantes o Escorpiones en Alcantarillas Tóxicas.</p>
+        <div class="footer-texto-col">
+            <h2 class="titulo2" style="font-size: 1.3rem; margin-top: 0;">
+               Aún tienes tantos estilos por modelar... así que ten paciencia
+            </h2>
+            <h2 style="margin-bottom: 0;">
+                <a href="../index.html">Volver al lobby</a>
+            </h2>
         </div>
-        <img src="/imagenes/alcantarilla.png" alt="">
-    </div>
-<br>
-    <div class="cubecraftskins">
-        <div class="texto-skin">
-            <h2>Atuendo de El Conserje</h2>
-            <p>Armadura pesada que te hace parecer un horno de fundición con patas. Ideal para intimidar zombis.</p>
-            <p><strong>Cómo conseguirlo:</strong> Derrota al Conserje por primera vez en el Puente Negro.</p>
-        </div>
-        <img src="/imagenes/conserjero.png" alt="Conserje" class="img-skin">
-    </div>
-<br>
-    <div class="cubecraftskins">
-        <div class="texto-skin">
-            <h2>Atuendo de La Mano del Rey</h2>
-            <p>Armadura dorada masiva. Te da un aire de autoridad que no impide que te maten por la espalda.</p>
-            <p><strong>Cómo conseguirlo:</strong> Derrota a La Mano del Rey en dificultad 0 Células.</p>
-        </div>
-        <img src="/imagenes/manita del rey.png" alt="">
-    </div>
-</div>
-  
-<div class="titulo"> colaboraciones </div> <hr>
-
-    <div class="colabchi">
-        <div class="">
-            <h2>Atuendo del Penitente (Blasphemous)</h2>
-            <p>El imponente Capirote de Blasphemous. Casco puntiagudo lleno de espinas y estética sagrada.</p>
-            <p><strong>Cómo conseguirlo:</strong> Usa el Frasco de Sangre con salud muy baja en su sala de lore.</p>
-            <p><em>"Capirote de espinas y culpa sagrada..."</em></p>
-        </div>
-        <img src="/imagenes/balfemia.jpeg" alt="Hollow" width="150" height="150">
     </div>
 
-    <div class="colabchihollow">
-        <div class="">
-            <h2>Atuendo del Caballero (Hollow Knight)</h2>
-            <p>La máscara de hueso blanca y capa gris de Ghost. Siente el vacío de Hallownest.</p>
-            <p><strong>Cómo conseguirlo:</strong> Haz "pogo" con el Aguijón Pura sobre un objeto o enemigo.</p>
-            <p><em>"Sin voz para gritar el sufrimiento..."</em></p>
-        </div>
-        <img src="/imagenes/vacio.jpeg" alt="Hollow" width="150" height="150">
-    </div>
+    <script>
+        async function cargarSkins() {
+            try {
+                const resAtuendos = await fetch('/api/wiki/atuendos');
+                const dataAtuendos = await resAtuendos.json();
 
-    <div class="colabchidifter">
-        <div class="">
-            <h2>Atuendo del Drifter (Hyper Light Drifter)</h2>
-            <p>Traje futurista con capa cian brillante. Estética cyberpunk neón increíble.</p>
-            <p><strong>Cómo conseguirlo:</strong> Derrota a un enemigo usando la combinación de Pistola de Luz y Espada.</p>
-        </div>
-        <img src="/imagenes/drifter.jpeg" alt="drifter" width="150" height="150">
-    </div>
+                const resColab = await fetch('/api/wiki/atuendos-colaborativos');
+                const dataColab = await resColab.json();
 
-    <div class="colabchiterraria">
-        <div class="">
-            <h3>Atuendo del Guía (Terraria)</h3>
-            <p>Camisa verde y cabello rubio. Un toque de humor de bloques en la isla.</p>
-            <p><strong>Cómo conseguirlo:</strong> Sé quemado por fuego mientras sostienes la espada Furia Estelar.</p>
-        </div>
-        <img src="/imagenes/terraria.jpeg" alt="Terraria" width="150" height="150">
-    </div>
+                const contenedor = document.getElementById('contenedor-atuendos');
+                contenedor.innerHTML = '';
 
-    <div class="colabchislay">
-        <div class="">
-            <h2>Atuendo del Blindado (Slay the Spire)</h2>
-            <p>Armadura roja robusta y máscara de hierro. El guerrero Ironclad listo para embestir.</p>
-            <p><strong>Cómo conseguirlo:</strong> Mata a un enemigo con el Mazo de Cartas teniendo activa la Barricada.</p>
-        </div>
-        <img src="/imagenes/blindado (2).jpeg" alt="Slay" width="150" height="150">
-    </div>
+                // Atuendos normales (Clasificados por su rareza en .aspectos-basicos o .aspectos-avanzado)
+                if(dataAtuendos.success) {
+                    dataAtuendos.data.forEach(skin => {
+                        let claseRareza = skin.rareza === 'basico' ? 'aspectos-basicos' : 'aspectos-avanzado';
+                        contenedor.innerHTML += `
+                            <div class="${claseRareza}">
+                                <div class="info-text">
+                                    <h2>${skin.nombre}</h2>
+                                    <p>${skin.descripcion}</p>
+                                    ${skin.dondeConseguirLo ? `<p><strong>Cómo conseguirlo:</strong> ${skin.dondeConseguirLo.descripcion}</p>` : ''}
+                                    <p><em>${skin.extra}</em></p>
+                                </div>
+                                <img src="${skin.imagen}" alt="${skin.nombre}" width="150">
+                            </div>
+                        `;
+                    });
+                }
 
-    <div class="colabchirisk">
-        <div class="">
-            <h2>Atuendo de Comando (Risk of Rain)</h2>
-            <p>Traje espacial con casco de burbuja naranja. Ideal para biomas tecnológicos.</p>
-            <p><strong>Cómo conseguirlo:</strong> Mata a un enemigo con el Láser de Polvareda mientras estás en el aire.</p>
-        </div>
-        <img src="/imagenes/risk.jpeg" alt="Risk" width="150" height="150">
-    </div>
-
-    <div class="colabchishovel">
-        <div class="">
-            <h2>Atuendo de Shovel Knight</h2>
-            <p>La armadura azul del caballero de la pala. Heroísmo en cada píxel.</p>
-            <p><strong>Cómo conseguirlo:</strong> Rebota sobre enemigos con el Cetro de Caballero sin tocar el suelo.</p>
-        </div>
-        <img src="/imagenes/shoveljr.jpeg" alt="Shovel"  width="150" height="150">
-    </div>
-
-    <div class="colabchiskul">
-        <div class="">
-            <h2>Atuendo de Jacket (Hotline Miami)</h2>
-            <p>Máscara de gallo Richard y chaqueta universitaria. Violencia retro de los 80. y revelde... incluso en esta pagina</p>
-            <p><strong>Cómo conseguirlo:</strong> Mata enemigos aturdidos con el Bate de Béisbol.</p>
-        </div>
-        <img src="/imagenes/maimaivis.jpeg" alt="Jacket"  width="150" height="150">
-    </div>
-
-    <div class="colabchikatanazero">
-        <div class="">
-            <h3>Atuendo de Zero (Katana ZERO)</h3>
-            <p>Ninja futurista con bata larga y bufanda. Velocidad y precisión letales.</p>
-            <p><strong>Cómo conseguirlo:</strong> 15 bajas seguidas con ataque cargado de Katana de Iniciado sin recibir daño.</p>
-        </div>
-        <img src="/imagenes/katana zerop.jpeg" alt="Zero"  width="150" height="150">
-    </div>
-
-    <div class="colabchiguacamelee">
-        <div class="">
-            <h2>Atuendo de Juan (Guacamelee!)</h2>
-            <p>Máscara de lucha libre mexicana. Puños que son ley en esta isla.</p>
-            <p><strong>Cómo conseguirlo:</strong> Usa la habilidad Pollo de Poder para golpear a los enemigos.</p>
-        </div>
-        <img src="/imagenes/muchaluchas.jpeg" width="150" height="150">
-    </div>
-
-    <div class="colabchiskul">
-        <div class="">
-            <h2>Atuendo de Skul (Skul: The Hero Slayer)</h2>
-            <p>Pequeño esqueleto adorable. Cambiar de cabeza es su única ambición.</p>
-            <p><strong>Cómo conseguirlo:</strong> Interactúa con el montón de calaveras en la sala del trono.</p>
-        </div>
-        <img src="/imagenes/skuller.png" width="150" height="150">
-    </div>
-</div>
-<br> 
- <div class="colabchidifter"><h2>aun tienes tantos estilos por modelar... asique tengan paciencia</h2> 
-  <h2><a href="/index.html">volever al lobby</a> </h2>
- <video src="/video/WhatsApp Video 2026-02-04 at 12.02.33.mp4" autoplay loop></video> </div>
+                // Atuendos Colaborativos (Usan la clase .aspectos-colaborativo con doble imagen)
+                if(dataColab.success) {
+                    dataColab.data.forEach(skin => {
+                        contenedor.innerHTML += `
+                            <div class="aspectos-colaborativo">
+                                <div class="info-text">
+                                    <h2>${skin.nombre}</h2>
+                                    <p>${skin.descripcion}</p>
+                                    <p><em>${skin.extra}</em></p>
+                                </div>
+                                <div class="imagenes-dobles">
+                                    <img src="${skin.imagen}" alt="Imagen 1" class="img-especial-1" width="120">
+                                    ${skin.imagenSecundaria ? `<img src="${skin.imagenSecundaria}" alt="Imagen 2" class="img-especial-2" width="120">` : ''}
+                                </div>
+                            </div>
+                        `;
+                    });
+                }
+            } catch (error) {
+                console.error("Error al cargar aspectos:", error);
+            }
+        }
+        cargarSkins();
+    </script>
 </body>
+</html>

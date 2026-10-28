@@ -1,115 +1,64 @@
- <title>objetos</title>
- 
- <link rel="stylesheet" href="../css/tipografia.css">
-     <link rel="stylesheet" href="../css/fondo.css">
-     <link rel="stylesheet" href="../css/cubos.css">
-     <link rel="stylesheet" href="../css/aniationvs.css">
-     <link rel="stylesheet" href="../css/posicion.css">
-     
-<body id="fondo">
-    <img src="/imagenes/verdadedo simblodeadcell.png" id="compañero-fijo" alt="Compañero de viaje">
-<div id="grid-recursos">
-    
-     <h1 class="titulo2" style="color: rgb(98, 221, 221);">recursos y mecancias de las isla</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos y Mecánicas - Dead Cells</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
 
-    <br> <hr>
+    <img src="../imagenes/verdadedo simblodeadcell.png" id="compañero-fijo" alt="Compañero de viaje">
 
-    <div class="colabchislay">
-        <img id="imagen-portada2" src="/imagenes/monedota.png" width="300" height="250">
-        <h3>Oro (Monedas)</h3>
-        <p>El recurso más común. Se obtiene al derrotar monstruos, encontrar gemas o vender equipo.</p>
-        <p><strong>Uso:</strong> Compra de equipo y mejora de armas.</p>
-        <p><em>"Brilla en la oscuridad, pero no puede comprar tu libertad."</em></p>
-    </div>    
+    <h1 class="titulo2">Recursos y Mecánicas de la Isla</h1>
+    <hr>
 
-    <div class="colabchislay">
-        <img id="imagen-portada2" src="/imagenes/celula madre.png" width="290" height="250">
-        <br>
-        <h3>Células Madre</h3>
-        <p>Esferas de poder que obtienes al derrotar a los jefes finales. Aumentan la dificultad del juego.</p>
-        <p><strong>Uso:</strong> Modificador de dificultad (0 a 5 BSC).</p>
-        <p><em>"Un fragmento de dolor que hace el mundo más cruel."</em></p>
+    <div id="grid-recursos">
+        <!-- Se inyectarán dinámicamente desde la BD -->
     </div>
-        
-
-    <div class="colabchislay">
-        <img id="imagen-portada2" src="/imagenes/pergamino mejorado.png" width="300" height="250">
-        <br>
-        <h3>Pergaminos de Poder</h3>
-        <p>La única forma de escalar tu daño. Elige entre Brutalidad, Táctica o Supervivencia.</p>
-        <p><strong>Uso:</strong> Aumento de estadísticas porcentuales.</p>
-        <p><em>"Conocimiento antiguo que fluye por tus venas."</em></p>
-    </div>
-        
-    <div class="colabchislay">
-         <img id="imagen-portada2" src="/imagenes/velocidad dadcell.png" width="300" height="250">
-        <h3>Impulso de Velocidad</h3>
-        <p>Estado temporal al matar enemigos rápido. Te permite alcanzar las puertas de tiempo.</p>
-        <p><strong>Uso:</strong> Movilidad rápida y salas de recompensa.</p>
-        <p><em>"Un parpadeo y ya estás al otro lado."</em></p>
-    </div>
-
-    <div class="colabchislay">
-        <img id="imagen-portada2" src="/imagenes/celula azul.png" width="300" height="250">
-        <h3>Células azules</h3>
-        <p>Moneda principal <a href="/pages/citrado.html" style="color: white;">de</a> progresión. Se extraen de enemigos para desbloquear planos permanentes.</p>
-        <p><strong>Uso:</strong> Desbloqueo de equipo y mejoras en la Forja.</p>
-        <p><em>"Esencia azul de vida que alimenta una ambición sin fin."</em></p>
-    </div>
-    <hr><br>
-                    <h1 class="titulo" style="color: rgb(211, 242, 252);">runas</h1>
-    <div class="colabchislay">
-        <img id="imagen-portada2" src="/imagenes/runa lianas.png" width="300" height="250">
-        <h3> Viñedos</h3>
-        <p>Te permite hacer crecer lianas desde brotes en el suelo para alcanzar zonas elevadas.</p>
-        <p><strong>Uso:</strong> Desbloquea rutas verticales básicas.</p>
-     <p><em>"La naturaleza se dobla ante tu voluntad... o al menos sus plantas."</em></p>
-    </div>
-
-    <div class="colabchislay">
-        <img id="imagen-portada2" src="/imagenes/runa carnero.png" width="300" height="250">
-        <h3> Ariete</h3>
-        <p>Te da el poder de romper suelos frágiles marcados con una runa naranja brillante.</p>
-        <p><strong>Uso:</strong> Acceso a zonas subterráneas y cámaras secretas.</p>
-        <p><em>"Caer con estilo es caer con fuerza."</em></p>
-    </div>
-
-    <div class="colabchislay">
-         <img id="imagen-portada2" src="/imagenes/runa araña.png" width="300" height="250">
-        <h3> Araña</h3>
-        <p>Te permite escalar paredes y saltar de muro en muro de forma infinita.</p>
-        <p><strong>Uso:</strong> Movilidad total por cualquier superficie vertical.</p>
-        <p><em>"¿Quién necesita escaleras cuando tienes garras?"</em></p>
-    </div>
-
-    <div class="colabchislay">
-        <img id="imagen-portada2" src="/imagenes/runateletrans.png" width="300" height="250">
-        <h3>Teletransportador</h3>
-        <p>Sarcófagos antiguos que te permiten viajar instantáneamente entre puntos descubiertos.</p>
-        <p><strong>Uso:</strong> Viaje rápido dentro del mismo bioma.</p>
-        <p><em>"Un paso en la piedra, un salto en el espacio."</em></p>
-    </div>
-
-    <div class="colabchislay">
-        <img id="imagen-portada2" src="/imagenes/runa desfio.png" width="300" height="250">
-        <h3> Desafiador</h3>
-        <p>Desbloquea el acceso al Desafío Diario en el menú principal y dentro del juego.</p>
-        <p><strong>Uso:</strong> Compite por planos y recompensas diarias.</p>
-        <p><em>"Pon a prueba tu temple contra el reloj."</em></p>
-    </div>
-
-    <div class="colabchislay">
-        <img id="imagen-portada2" src="/imagenes/runaumunculo.png" width="300" height="250">
-     <h3> Homúnculo</h3>
-        <p>Te permite separar tu cabeza de tu cuerpo para explorar, agarrar objetos o atacar enemigos.</p>
-        <p><strong>Uso:</strong> Alcanzar planos lejanos y daño pasivo.</p>
-        <p><em>"Perder la cabeza nunca fue tan útil."</em></p>
-    </div>
-
-</div>
 
     <br>
- <div class="colabchidifter"><h2>muchos objetos por recolectar... asique tengan paciencia</h2> 
-  <h2><a href="/index.html">volever al lobby</a> </h2>
- <video src="/video/WhatsApp Video 2026-02-04 at 12.02.33.mp4" autoplay loop></video></div>
+    <div class="seccion-brillante footer-bloque-video">
+        <div class="footer-video-col">
+            <video src="../video/WhatsApp Video 2026-02-04 at 12.02.33.mp4" autoplay loop muted></video>
+        </div>
+        <div class="footer-texto-col">
+            <h2 class="titulo2" style="font-size: 1.3rem; margin-top: 0;">
+               Hay muchos objetos por recolectar... así que ten paciencia
+            </h2>
+            <h2 style="margin-bottom: 0;">
+                <a href="../index.html">Volver al lobby</a>
+            </h2>
+        </div>
+    </div>
+
+    <script>
+        async function cargarRecursos() {
+            try {
+                const res = await fetch('/api/wiki/recursos');
+                const json = await res.json();
+                const grid = document.getElementById('grid-recursos');
+                grid.innerHTML = '';
+
+                if(json.success && json.data) {
+                    json.data.forEach(item => {
+                        grid.innerHTML += `
+                            <div class="${item.claseCss || 'recursos'}">
+                                <img src="${item.imagen}" alt="${item.nombre}">
+                                <div class="info-text">
+                                    <h2>${item.nombre}</h2>
+                                    <p>${item.descripcion}</p>
+                                    ${item.extra ? `<p><em>${item.extra}</em></p>` : ''}
+                                </div>
+                            </div>
+                        `;
+                    });
+                }
+            } catch (error) {
+                console.error("Error al cargar recursos:", error);
+            }
+        }
+        cargarRecursos();
+    </script>
 </body>
+</html>

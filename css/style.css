@@ -1,127 +1,622 @@
-#fucia {
+/* Importación de fuentes pixel/arcade y HUD */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rajdhani:wght@600;700&display=swap');
 
-    color: rgb(236, 17, 120);
+:root {
+    /* Paleta de Colores Dead Cells */
+    --dc-bg-dark: #0b0914;
+    --dc-bg-card: rgba(22, 17, 38, 0.92);
+    --dc-border-gold: #d4af37;
+    --dc-border-purple: #4a2e80;
+    --dc-magenta: #ff2a6d;
+    --dc-cyan: #05d9e8;
+    --dc-orange: #ff5e00;
+    --dc-green-health: #00ff66;
+    --dc-text: #f0f0f5;
+    
+    --font-title: 'Press Start 2P', monospace;
+    --font-body: 'Rajdhani', sans-serif;
 }
 
-#rojo { 
-
-    color: rgb(248, 32, 32);
-}
-
-#verde {
-
-    color: rgba(2, 255, 107, 0.775);
-}
-
-#cyan {
-
-    color: aqua;
-}
-
-p , h2  {
-
-    color: azure;
-}
-
-#blanco {
-
-    color: white;
-}
-
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: auto;
-    background-color: rgba(186, 98, 51, 0.7);
-    border: 3px solid #5b2508;
-    color: white;
-    font-family: sans-serif;
-}
-
-
-#monstruos, #masters, #armeria, #mutaciones, #skins, #recursos {
+/* Base global */
+body {
+    background-color: var(--dc-bg-dark);
+    background-image: 
+        radial-gradient(circle at 50% 10%, rgba(255, 42, 109, 0.15), transparent 70%),
+        linear-gradient(180deg, #181028 0%, var(--dc-bg-dark) 100%);
+    background-attachment: fixed;
+    color: var(--dc-text);
+    font-family: var(--font-body);
+    font-size: 1.15rem;
+    line-height: 1.5;
     margin: 0;
-    color: #fff;
-    font-size: 1.4rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    padding: 20px;
 }
 
+/* Títulos más grandes y con el estilo de videojuego */
+h1, h2, h3, .titulo, .titulo2 {
+    font-family: var(--font-title);
+    text-transform: uppercase;
+    text-align: center;
+    color: #089c99;
+    text-shadow: 3px 3px 0px rgba(11, 255, 202, 0.9), -2px -2px 0px rgba(8, 156, 153, 0.4);
+    margin-top: 2rem;
+    margin-bottom: 1.2rem;
+}
 
-#fucia, #rojo, #verde, #cyan, #roble, #girs, #verdementa{
+h1, .titulo2 { 
+    font-size: 2.3rem; 
+}
+
+h2, .titulo { 
+    font-size: 1.7rem; 
+}
+
+h3 { 
+    font-size: 1.3rem; 
+    color: var(--dc-border-gold); 
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--dc-magenta), var(--dc-cyan), transparent);
+    margin: 30px 0;
+}
+
+/* Enlaces estilo botón HUD */
+a {
+    color: var(--dc-cyan);
     text-decoration: none;
     font-weight: bold;
-    font-size: 20px;
-    padding: 5px 10px;
-    border-radius: 5px;
-    background: rgba(0, 0, 0, 0.3);
-    transition: 0.3s;
+    transition: all 0.2s ease-in-out;
 }
 
-
-#fucia:hover { color: #ff00ff; background: white; }
-#rojo:hover { color: #ff0000; background: white; }
-#verde:hover { color: #00ff00; background: white; }
-#cyan:hover { color: #00ffff; background: white; }
-#roble:hover { color: #854708; background: white; }
-#gris:hover { color: #00ffff; background: white; }
-#verdementa:hover { color: #854708; background: white; }
-
-
-td {
-    padding: 15px;
-    border-bottom: 1px solid #5b2508;
+a:hover {
+    color: var(--dc-magenta);
+    text-shadow: 0 0 8px var(--dc-magenta);
 }
 
+/* ==========================================
+   1. Armas / Aspectos Colaborativo
+   ========================================== */
+.armas-colaborativo, .aspectos-colaborativo {
+    background: linear-gradient(to top, #4102bf, #1a122a);
+    border: none;
+    border-radius: 0px;
+    padding: 35px 40px;
+    margin: 30px auto;
+    max-width: 1150px;
+    box-shadow: 
+        0 -4px 0 0 #4102bf,
+        0 4px 0 0 #ff3333,
+        -4px 0 0 0 #4102bf,
+        4px 0 0 0 #ff3333,
+        inset 0 0 0 2px rgba(0, 0, 0, 0.9),
+        6px 6px 0px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
 
-.seccion-brillante {
-    position: relative;
-    overflow: hidden;
+/* ==========================================
+   2. Monstruos
+   ========================================== */
+.monstruos {
+    background: #000000;
+    border: none;
+    border-radius: 0px;
+    padding: 35px 40px;
+    margin: 30px auto;
+    max-width: 1150px;
+    box-shadow: 
+        0 -4px 0 0 #d67206,
+        0 4px 0 0 #d67206,
+        -4px 0 0 0 #d67206,
+        4px 0 0 0 #d67206,
+        inset 0 0 0 2px rgba(0, 0, 0, 0.9),
+        6px 6px 0px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* ==========================================
+   3. Aliado
+   ========================================== */
+.aliado {
+    background: linear-gradient(to top, #000000, #06d48f);
+    border: none;
+    border-radius: 0px;
+    padding: 35px 40px;
+    margin: 30px auto;
+    max-width: 1150px;
+    box-shadow: 
+        0 -4px 0 0 #04a7b0,
+        0 4px 0 0 #04a7b0,
+        -4px 0 0 0 #04a7b0,
+        4px 0 0 0 #04a7b0,
+        inset 0 0 0 2px rgba(0, 0, 0, 0.9),
+        6px 6px 0px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* ==========================================
+   4. Jefe (Alineado a la derecha, grande y uniforme)
+   ========================================== */
+.jefe {
+    background: linear-gradient(to top, #5805a1, #11011e);
+    border: none;
+    border-radius: 0px;
+    padding: 35px 40px;
+    margin: 30px auto;
+    max-width: 1150px;
+    box-shadow: 
+        0 -4px 0 0 #f01411,
+        0 4px 0 0 #f01411,
+        -4px 0 0 0 #f01411,
+        4px 0 0 0 #f01411,
+        inset 0 0 0 2px rgba(0, 0, 0, 0.9),
+        6px 6px 0px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.jefe img {
+    width: 620px;
+    max-width: 200%;
+    height: auto;
+    object-fit: cover;
+    border: none;
+    border-radius: 0px;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    box-shadow: 
+        0 -3px 0 0 var(--dc-magenta),
+        0 3px 0 0 var(--dc-magenta),
+        -3px 0 0 0 var(--dc-magenta),
+        3px 0 0 0 var(--dc-magenta);
+}
+
+/* ==========================================
+   5. Aspectos Básicos
+   ========================================== */
+.aspectos-basicos {
+    background: #000000;
+    border: none;
+    border-radius: 0px;
+    padding: 35px 40px;
+    margin: 30px auto;
+    max-width: 1150px;
+    box-shadow: 
+        0 -4px 0 0 #cd7f32,
+        0 4px 0 0 #cd7f32,
+        -4px 0 0 0 #cd7f32,
+        4px 0 0 0 #cd7f32,
+        inset 0 0 0 2px rgba(0, 0, 0, 0.9),
+        6px 6px 0px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* ==========================================
+   6. Aspectos Avanzado
+   ========================================== */
+.aspectos-avanzado {
+    background: #000000;
+    border: none;
+    border-radius: 0px;
+    padding: 35px 40px;
+    margin: 30px auto;
+    max-width: 1150px;
+    box-shadow: 
+        0 -4px 0 0 #c0c0c0,
+        0 4px 0 0 #c0c0c0,
+        -4px 0 0 0 #c0c0c0,
+        4px 0 0 0 #c0c0c0,
+        inset 0 0 0 2px rgba(0, 0, 0, 0.9),
+        6px 6px 0px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* ==========================================
+   7. Aspectos Legendario
+   ========================================== */
+.aspectos-legendario {
+    background: linear-gradient(to top, #ffa500, #ffd000, #000000);
+    border: none;
+    border-radius: 0px;
+    padding: 35px 40px;
+    margin: 30px auto;
+    max-width: 1150px;
+    box-shadow: 
+        0 -4px 0 0 #ff0011,
+        0 4px 0 0 #ff0011,
+        -4px 0 0 0 #ff0011,
+        4px 0 0 0 #ff0011,
+        inset 0 0 0 2px rgba(0, 0, 0, 0.9),
+        6px 6px 0px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* ==========================================
+   8. Recursos
+   ========================================== */
+.recursos {
+    background: #a688e9;
+    border: none;
+    border-radius: 0px;
+    padding: 35px 40px;
+    margin: 30px auto;
+    max-width: 1150px;
+    box-shadow: 
+        0 -4px 0 0 #ffc73b,
+        0 4px 0 0 #ffc73b,
+        -4px 0 0 0 #ffc73b,
+        4px 0 0 0 #ffc73b,
+        inset 0 0 0 2px rgba(0, 0, 0, 0.9),
+        6px 6px 0px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* ==========================================
+   9. Armas DLC
+   ========================================== */
+.armas-dlc {
+    background: #000000;
+    border: none;
+    border-radius: 0px;
+    padding: 35px 40px;
+    margin: 30px auto;
+    max-width: 1150px;
+    box-shadow: 
+        0 -4px 0 0 #ff3333,
+        0 4px 0 0 #068e69,
+        -4px 0 0 0 #ff3333,
+        4px 0 0 0 #068e69,
+        inset 0 0 0 2px rgba(0, 0, 0, 0.9),
+        6px 6px 0px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* ==========================================
+   10. Sangriento
+   ========================================== */
+.sangriento {
+    background: #000000;
+    border: none;
+    border-radius: 0px;
+    padding: 35px 40px;
+    margin: 30px auto;
+    max-width: 1150px;
+    box-shadow: 
+        0 -4px 0 0 #ffd700,
+        0 4px 0 0 #ffd700,
+        -4px 0 0 0 #ffd700,
+        4px 0 0 0 #ffd700,
+        inset 0 0 0 2px rgba(0, 0, 0, 0.9),
+        6px 6px 0px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Secciones generales y tarjetas estándar (tamaño compacto uniforme) */
+.seccion-brillante, .card-hud, .cubecraftskins, .colabchislay {
+    background: var(--dc-bg-card);
+    border: none;
+    border-radius: 0px;
+    padding: 35px 40px;
+    margin: 30px auto;
+    max-width: 1150px;
+    box-shadow: 
+        0 -4px 0 0 var(--dc-border-purple),
+        0 4px 0 0 var(--dc-border-gold),
+        -4px 0 0 0 var(--dc-border-gold),
+        4px 0 0 0 var(--dc-border-gold),
+        inset 0 0 0 2px rgba(0, 0, 0, 0.9),
+        6px 6px 0px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+}
+
+/* ==========================================
+   ESTILOS DE ESPECIALIDADES DE ARMAS (6 Tipos)
+   ========================================== */
+
+/* 1. Solo Brutalidad (Rojo / Rojo) */
+.esp-brutalidad {
+    background: #000000;
+    border: none; padding: 35px 40px; margin: 30px auto; max-width: 1150px;
+    box-shadow: 0 -4px 0 0 #ff3333, 0 4px 0 0 #ff3333, -4px 0 0 0 #ff3333, 4px 0 0 0 #ff3333, inset 0 0 0 2px rgba(0,0,0,0.9), 6px 6px 0px rgba(0,0,0,0.7);
+    backdrop-filter: blur(4px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px;
+}
+
+/* 2. Solo Estrategia (Morado / Morado) */
+.esp-estrategia {
+    background: #000000;
+    border: none; padding: 35px 40px; margin: 30px auto; max-width: 1150px;
+    box-shadow: 0 -4px 0 0 #a855f7, 0 4px 0 0 #a855f7, -4px 0 0 0 #a855f7, 4px 0 0 0 #a855f7, inset 0 0 0 2px rgba(0,0,0,0.9), 6px 6px 0px rgba(0,0,0,0.7);
+    backdrop-filter: blur(4px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px;
+}
+
+/* 3. Solo Supervivencia (Verde / Verde) */
+.esp-supervivencia {
+    background: #000000;
+    border: none; padding: 35px 40px; margin: 30px auto; max-width: 1150px;
+    box-shadow: 0 -4px 0 0 #10b981, 0 4px 0 0 #10b981, -4px 0 0 0 #10b981, 4px 0 0 0 #10b981, inset 0 0 0 2px rgba(0,0,0,0.9), 6px 6px 0px rgba(0,0,0,0.7);
+    backdrop-filter: blur(4px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px;
+}
+
+/* 4. Brutalidad + Estrategia (Rojo arriba/abajo, Morado a los lados) */
+.esp-brutalidad-estrategia {
+    background: #000000;
+    border: none; padding: 35px 40px; margin: 30px auto; max-width: 1150px;
+    box-shadow: 0 -4px 0 0 #ff3333, 0 4px 0 0 #ff3333, -4px 0 0 0 #a855f7, 4px 0 0 0 #a855f7, inset 0 0 0 2px rgba(0,0,0,0.9), 6px 6px 0px rgba(0,0,0,0.7);
+    backdrop-filter: blur(4px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px;
+}
+
+/* 5. Estrategia + Supervivencia (Morado arriba/abajo, Verde a los lados) */
+.esp-estrategia-supervivencia {
+    background: #000000;
+    border: none; padding: 35px 40px; margin: 30px auto; max-width: 1150px;
+    box-shadow: 0 -4px 0 0 #a855f7, 0 4px 0 0 #a855f7, -4px 0 0 0 #10b981, 4px 0 0 0 #10b981, inset 0 0 0 2px rgba(0,0,0,0.9), 6px 6px 0px rgba(0,0,0,0.7);
+    backdrop-filter: blur(4px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px;
+}
+
+/* 6. Brutalidad + Supervivencia (Rojo arriba/abajo, Verde a los lados) */
+.esp-brutalidad-supervivencia {
+    background: #000000;
+    border: none; padding: 35px 40px; margin: 30px auto; max-width: 1150px;
+    box-shadow: 0 -4px 0 0 #ff3333, 0 4px 0 0 #ff3333, -4px 0 0 0 #10b981, 4px 0 0 0 #10b981, inset 0 0 0 2px rgba(0,0,0,0.9), 6px 6px 0px rgba(0,0,0,0.7);
+    backdrop-filter: blur(4px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px;
+}
+
+/* Tarjetas informativas de especialidades en la parte superior */
+.grid-especialidades {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1150px;
+    margin: 20px auto;
+}
+.card-brutalidad {
+    background: rgba(22, 17, 38, 0.92);
     padding: 20px;
-    border-radius: 15px;
-    
-    
-    background: linear-gradient(145deg, #1a1a2e 0%, #0f0f1a 100%);
-    
-    
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    
-    margin-bottom: 25px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
-    transition: all 0.4s ease;
+    box-shadow: 0 -4px 0 0 #ff3333, 0 4px 0 0 #ff3333, -4px 0 0 0 #ff3333, 4px 0 0 0 #ff3333;
+}
+.card-estrategia {
+    background: rgba(22, 17, 38, 0.92);
+    padding: 20px;
+    box-shadow: 0 -4px 0 0 #a855f7, 0 4px 0 0 #a855f7, -4px 0 0 0 #a855f7, 4px 0 0 0 #a855f7;
+}
+.card-supervivencia {
+    background: rgba(22, 17, 38, 0.92);
+    padding: 20px;
+    box-shadow: 0 -4px 0 0 #10b981, 0 4px 0 0 #10b981, -4px 0 0 0 #10b981, 4px 0 0 0 #10b981;
 }
 
+/* Contenedores con imagen lateral compacta para las demás categorías */
+.card-hud, .cubecraftskins, .colabchislay, 
+.monstruos img, .aliado img, .armas-colaborativo img, 
+.aspectos-colaborativo img, .aspectos-basicos img, 
+.aspectos-avanzado img, .aspectos-legendario img, 
+.recursos img, .armas-dlc img, .sangriento img {
+    /* Mantener imágenes pequeñas y uniformes en las demás categorías */
+}
 
-.seccion-brillante::before {
-    content: normal;
-    position: absolute;
-    top: 0;
-    left: -150%;
-    width: 60%;
+.monstruos img, .aliado img, .armas-colaborativo img, 
+.aspectos-basicos img, .aspectos-avanzado img, 
+.aspectos-legendario img, .recursos img, 
+.armas-dlc img, .sangriento img, 
+.card-hud img, .cubecraftskins img, .colabchislay img {
+    width: 160px;
+    height: auto;
+    border: none;
+    border-radius: 0px;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    box-shadow: 
+        0 -3px 0 0 var(--dc-border-purple),
+        0 3px 0 0 var(--dc-border-purple),
+        -3px 0 0 0 var(--dc-border-purple),
+        3px 0 0 0 var(--dc-border-purple);
+    object-fit: cover;
+}
+
+.info-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+/* Imágenes de Portada y Galería con bloques pixelados */
+#imagen-portada2, img[alt="El Prisionero"], img[alt="Bob"] {
+    display: block;
+    margin: 15px auto;
+    border: none;
+    border-radius: 0px;
+    box-shadow: 
+        0 -3px 0 0 var(--dc-magenta),
+        0 3px 0 0 var(--dc-magenta),
+        -3px 0 0 0 var(--dc-magenta),
+        3px 0 0 0 var(--dc-magenta);
+    max-width: 100%;
+    height: auto;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+/* Icono Fijo del Compañero */
+#compañero-fijo, #compañero-fijo2 {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: auto;
+    z-index: 100;
+    filter: drop-shadow(2px 2px 0px var(--dc-cyan));
+    animation: flotar 3s ease-in-out infinite;
+}
+
+@keyframes flotar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Tabla de Índice con celdas cuadradas y estilo bloque pixelado */
+table {
+    width: 100%;
+    max-width: 1050px;
+    margin: 30px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: var(--dc-bg-card);
+    border: none;
+    box-shadow: 
+        0 -4px 0 0 var(--dc-border-gold),
+        0 4px 0 0 var(--dc-border-gold),
+        -4px 0 0 0 var(--dc-border-gold),
+        4px 0 0 0 var(--dc-border-gold),
+        6px 6px 0px rgba(0, 0, 0, 0.9);
+}
+
+th, td {
+    padding: 20px;
+    border: 2px solid var(--dc-border-purple);
+    border-radius: 0px;
+    text-align: left;
+}
+
+th {
+    background: rgba(42, 32, 64, 0.95);
+}
+
+/* Destacados especiales */
+mark {
+    background-color: var(--dc-magenta);
+    color: #fff;
+    padding: 2px 6px;
+    font-weight: bold;
+    border-radius: 0px;
+}
+
+.texto-rojo-neon {
+    color: var(--dc-magenta);
+    font-family: var(--font-title);
+    text-shadow: 0 0 10px var(--dc-magenta);
+}
+
+/* Grilla de Recursos */
+#grid-recursos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Transición fluida para las celdas y filas de la tabla */
+table tbody tr {
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+table tbody td {
+    padding: 22px;
+}
+
+table tbody td a {
+    display: block;
+    width: 100%;
     height: 100%;
-    background: linear-gradient(
-        to right, 
-        transparent, 
-        rgba(255, 255, 255, 0.2), 
-        transparent
-    );
-    transform: skewX(-20deg);
+    text-decoration: none;
 }
 
-
-.seccion-brillante:hover {
-    transform: translateY(-5px); 
-    border-color: rgba(255, 255, 255, 0.4); 
-    box-shadow: 0 15px 35px rgba(0,0,0,0.7);
+/* Efecto al pasar el cursor por el índice */
+table tbody tr:hover {
+    transform: scale(1.02);
+    background-color: rgba(42, 28, 70, 0.95);
+    box-shadow: inset 0 0 0 2px var(--dc-magenta);
+    border-color: var(--dc-magenta);
 }
 
-.seccion-brillante:hover::before {
-    left: 150%;
-    transition: all 0.7s ease;
+table tbody tr:hover h2 {
+    color: #00ffcc;
+    text-shadow: 0 0 10px #00ffb3, 2px 2px 0px var(--dc-magenta);
 }
 
+/* Estilo para el bloque final con video */
+.footer-bloque-video {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1250px;
+}
 
-.seccion-brillante h5, .seccion-brillante p, h1 {
-    position: relative;
-    z-index: 1;
+.footer-video-col {
+    flex: 1.3;
+    min-width: 320px;
+}
+
+.footer-texto-col {
+    flex: 1;
+    min-width: 260px;
+    text-align: center;
+}
+
+/* Ajuste para que el video o imagen se vea completo con bordes en bloques de píxeles */
+.footer-video-col video, .footer-img-col img {
+    width: 100%;
+    height: auto;
+    max-height: 320px;
+    object-fit: contain;
+    border: none;
+    border-radius: 0px;
+    box-shadow: 
+        0 -3px 0 0 var(--dc-magenta),
+        0 3px 0 0 var(--dc-magenta),
+        -3px 0 0 0 var(--dc-magenta),
+        3px 0 0 0 var(--dc-magenta);
+    display: block;
 }
